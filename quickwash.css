@@ -1,55 +1,61 @@
+/* === Global Base Styling === */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  line-height: 1.6;
-  scroll-behavior: smooth;
-  color: #333;
-  background: #fafafa;
+  font-family: Arial, sans-serif;     /* Main font for readability */
+  margin: 0;                          /* Removes default browser margin */
+  line-height: 1.6;                   /* Improves text spacing */
+  scroll-behavior: smooth;            /* Enables smooth anchor scrolling */
+  color: #333;                        /* Default text color */
+  background: #fafafa;                /* Light background for contrast */
 }
 
+/* Paragraph formatting */
 p {
   margin: 15px 0;
   font-size: 1.15rem;
-  line-height: 1.75;
+  line-height: 1.75;                  /* Increased line height for readability */
 }
 
+/* === Header Styling === */
 .site-header {
-  background-color: #cc6131;
-  color: white;
+  background-color: #cc6131;          /* Brand color */
+  color: white;                       /* White text for contrast */
   text-align: center;
-  padding: 50px 20px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+  padding: 50px 20px;                 /* Large spacing for visual emphasis */
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15); /* Subtle drop shadow */
 }
 
+/* Header title styling */
 .site-header h1 {
   margin: 0;
-  font-size: 3.6rem;  
+  font-size: 3.6rem;                  /* Large title text */
   letter-spacing: 2px;
   font-weight: 800;
 }
 
+/* Address text under the title */
 .site-header p {
   margin-top: 8px;
   opacity: 1;
   font-size: 1.2rem;
 }
 
+/* Layout for header images + title */
 .header-logos {
   display: flex;
-  align-items: center;      
-  justify-content: center;  
-  gap: 50px;                
-  flex-wrap: nowrap;        
+  align-items: center;                /* Vertically aligns items */
+  justify-content: center;            /* Centers content horizontally */
+  gap: 50px;                          /* Space between images and text */
+  flex-wrap: nowrap;                  /* Keeps items on one line */
 }
 
-
+/* Header images */
 .header-img {
-  max-width: 400px;          
+  max-width: 400px;                   /* Prevent images from becoming too large */
   height: auto;
-  object-fit: contain;      
+  object-fit: contain;                /* Maintains image proportions */
 }
 
-
+/* Text inside header */
 .header-text {
   text-align: center;
 }
@@ -59,82 +65,91 @@ p {
   font-size: 3.2rem;
 }
 
+/* Address styling inside header text */
 .header-text p {
   margin-top: 5px;
   font-size: 1.1rem;
 }
 
-
+/* === Navigation Menu === */
 .main-nav {
   margin-top: 20px;
 }
 
+/* Navigation links */
 .main-nav a {
   color: white;
-  margin: 0 22px;          
+  margin: 0 22px;                     /* Spacing between links */
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.25rem;      
+  font-size: 1.25rem;
   letter-spacing: 0.5px;
-  transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;      /* Hover fade effect */
 }
+
+/* Positioning for custom underline */
 .main-nav a {
   position: relative;
   padding-bottom: 5px;
 }
 
+/* Custom underline placed under each nav link */
 .main-nav a::after {
   content: "";
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 100%;
-  height: 2px;         
+  width: 100%;                        /* Full width underline */
+  height: 2px;
   background-color: white;
   border-radius: 2px;
 }
 
+/* Hover effect */
 .main-nav a:hover {
   opacity: 0.7;
 }
 
-
+/* === Main Content Layout === */
 main {
-  max-width: 1100px;       
+  max-width: 1100px;                  /* Centers and limits content width */
   margin: 50px auto;
   padding: 0 30px;
   font-size: 1.15rem;
   line-height: 1.8;
 }
 
+/* Spacing + anchor scroll offset */
 section {
   margin-bottom: 50px;
-  scroll-margin-top: 150px; 
+  scroll-margin-top: 150px;           /* Prevents header overlap on nav click */
 }
 
-
+/* Section titles */
 h2 {
   color: #cc6131;
-  border-bottom: 3px solid #cc6131;
+  border-bottom: 3px solid #cc6131;   /* Colored underline */
   padding-bottom: 8px;
-  font-size: 2.3rem;   
+  font-size: 2.3rem;
   font-weight: 700;
   letter-spacing: 0.5px;
 }
 
-
+/* === Custom List Styling === */
 .styled-list {
   padding-left: 20px;
-  list-style: none;
+  list-style: none;                   /* Removes default bullets */
 }
 
+/* Items inside custom lists */
 .styled-list li {
-  margin: 12px 0;        
-  padding-left: 25px;
+  margin: 12px 0;
+  padding-left: 25px;                 /* Space for custom bullet */
   position: relative;
   font-size: 1.15rem;
 }
 
+/* Custom orange bullet symbol */
 .styled-list li::before {
   content: "•";
   color: #cc6131;
@@ -143,7 +158,7 @@ h2 {
   font-size: 1.2rem;
 }
 
-
+/* === Pricing Table Styling === */
 .pricing-table {
   width: 100%;
   border-collapse: collapse;
@@ -151,7 +166,7 @@ h2 {
   background: white;
   border-radius: 6px;
   overflow: hidden;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
 }
 
 .pricing-table th,
@@ -161,12 +176,13 @@ h2 {
   text-align: left;
 }
 
+/* Header cells */
 .pricing-table th {
   background-color: #f4f4f4;
   font-weight: bold;
 }
 
-
+/* === Footer === */
 footer {
   background-color: #f5f5f5;
   text-align: center;
@@ -177,34 +193,36 @@ footer {
   border-top: 1px solid #ddd;
 }
 
-
+/* === Scroll-to-Top Button === */
 #scrollBtn {
   position: fixed;
   bottom: 25px;
   right: 25px;
   padding: 12px 16px;
-  background-color: #cc6131;
+  background-color: #cc6131;          /* Brand color */
   color: white;
   border: none;
-  border-radius: 50%;
+  border-radius: 50%;                 /* Circular button */
   font-size: 1.2rem;
   cursor: pointer;
-  display: none;
+  display: none;                      /* Hidden until user scrolls */
   box-shadow: 0 4px 10px rgba(0,0,0,0.25);
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
+/* Hover enlarge effect */
 #scrollBtn:hover {
   transform: scale(1.1);
 }
 
-
+/* === Fade-in Animation for Sections === */
 .fade-in {
-  opacity: 0;
-  transform: translateY(10px);
-  animation: fadeInUp 0.8s forwards;
+  opacity: 0;                         /* Starts hidden */
+  transform: translateY(10px);        /* Slight downward offset */
+  animation: fadeInUp 0.8s forwards;  /* Smooth fade-up animation */
 }
 
+/* Keyframes for fade-in effect */
 @keyframes fadeInUp {
   to {
     opacity: 1;
@@ -212,14 +230,14 @@ footer {
   }
 }
 
-
+/* === Large Screen Adjustments === */
 @media (min-width: 1400px) {
   body {
-    font-size: 18px;
+    font-size: 18px;                  /* Slightly larger base font */
   }
 
   .site-header h1 {
-    font-size: 4rem;
+    font-size: 4rem;                  /* Larger title */
   }
 
   h2 {
@@ -227,11 +245,13 @@ footer {
   }
 }
 
+/* === Services Section Layout (Image + Text) === */
 .services-section {
   display: flex;
   justify-content: center;
 }
 
+/* Flexbox layout for services section */
 .services-content {
   display: flex;
   align-items: flex-start;
@@ -240,29 +260,33 @@ footer {
   width: 100%;
 }
 
-
+/* Text column */
 .services-text {
-  flex: 1;
+  flex: 1;                            /* Takes up left side */
 }
 
-
+/* Services image */
 .services-img {
   max-width: 400px;
   height: auto;
   object-fit: contain;
   margin-top: 80px;
 }
+
+/* Center items vertically */
 .services-content {
-  align-items: center;   
+  align-items: center;
 }
 
+/* Adjust image vertical position */
 .services-img {
-  margin-top: 20px;     
+  margin-top: 20px;
 }
 
+/* === Mobile Layout Adjustments === */
 @media (max-width: 800px) {
   .services-content {
-    flex-direction: column;
+    flex-direction: column;           /* Stack vertically */
     align-items: center;
     text-align: center;
   }
