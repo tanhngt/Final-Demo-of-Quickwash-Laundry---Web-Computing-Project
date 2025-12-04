@@ -1,33 +1,44 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- Declares HTML5 document -->
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quickwash Laundry</title>
-  <link rel="stylesheet" href="quickwash.css" />
+  <meta charset="UTF-8" /> <!-- Sets character encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Enables responsive layout -->
+  <title>Quickwash Laundry</title> <!-- Browser tab title -->
+  <link rel="stylesheet" href="quickwash.css" /> <!-- Links external CSS file -->
 </head>
+
 <body>
 
+  <!-- ==== HEADER SECTION ==== (Anh Nguyentan)-->
   <header class="site-header">
-  <div class="header-logos">
-    <img src="quickwashfront.webp" alt="Left Logo" class="header-img">
-    <div class="header-text">
-      <h1>QuickWash Laundry</h1>
-      <p>485 E San Carlos St, San Jose, CA 95112</p>
+    <div class="header-logos">
+      <!-- Left header image -->
+      <img src="quickwashfront.webp" alt="Left Logo" class="header-img">
+
+      <!-- Business title and address -->
+      <div class="header-text">
+        <h1>QuickWash Laundry</h1>
+        <p>485 E San Carlos St, San Jose, CA 95112</p>
+      </div>
+
+      <!-- Right header image -->
+      <img src="quickwashbubble.webp" alt="Right Logo" class="header-img">
     </div>
-    <img src="quickwashbubble.webp" alt="Right Logo" class="header-img">
-  </div>
 
-  <nav class="main-nav">
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#pricing">Pricing</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+    <!-- Navigation bar linking to page sections -->
+    <nav class="main-nav">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
 
+  <!-- ==== MAIN CONTENT AREA ==== -->
   <main>
+
+    <!-- About section (Nicole Brownen)--> 
     <section id="about" class="fade-in">
       <h2>About</h2>
       <p>
@@ -37,31 +48,37 @@
       </p>
     </section>
 
+    <!-- Services section with side-by-side text and image (Long Nguyen)-->
     <section id="services" class="fade-in services-section">
-  <div class="services-content">
-    <div class="services-text">
-      <h2>Our Services</h2>
-      <ul class="styled-list">
-        <li>Self-Service Laundry</li>
-        <li>Wash & Fold Service</li>
-        <li>Dry Cleaning</li>
-      </ul>
+      <div class="services-content">
 
-      <h3>Amenities</h3>
-      <ul class="styled-list">
-        <li>Free Wi-Fi</li>
-        <li>Comfortable Seating</li>
-        <li>Detergent & Change Dispensers</li>
-      </ul>
-    </div>
+        <!-- Services text column --> 
+        <div class="services-text">
+          <h2>Our Services</h2>
+          <ul class="styled-list">
+            <li>Self-Service Laundry</li>
+            <li>Wash & Fold Service</li>
+            <li>Dry Cleaning</li>
+          </ul>
 
-    <img src="quickwashmachine.webp" alt="Services Image" class="services-img">
-  </div>
-</section>
+          <h3>Amenities</h3>
+          <ul class="styled-list">
+            <li>Free Wi-Fi</li>
+            <li>Comfortable Seating</li>
+            <li>Detergent & Change Dispensers</li>
+          </ul>
+        </div>
+
+        <!-- Services image column -->
+        <img src="quickwashmachine.webp" alt="Services Image" class="services-img">
+      </div>
+    </section>
 
 
+    <!-- Pricing table section (Christopher Luk)-->
     <section id="pricing" class="fade-in">
       <h2>Pricing</h2>
+
       <table class="pricing-table">
         <tr><th>Service</th><th>Price</th></tr>
         <tr><td>Top-Load Washer</td><td>$2.75 / load</td></tr>
@@ -71,6 +88,7 @@
       </table>
     </section>
 
+    <!-- Contact information (Angelo Muniz)-->
     <section id="contact" class="fade-in">
       <h2>Contact Us</h2>
       <p><strong>Phone:</strong> (408) 995-0895</p>
@@ -78,14 +96,21 @@
       <p>Monday–Friday: 8:00 AM – 9:30 PM</p>
       <p>Saturday–Sunday: 7:00 AM – 9:30 PM</p>
     </section>
+
   </main>
 
+
+  <!-- ==== FOOTER ==== (Anh Nguyentan)-->
   <footer>
     <p>&copy; 2025 QuickWash Laundry. All Rights Reserved.</p>
   </footer>
 
+  <!-- Scroll-to-top button -->
   <button id="scrollBtn">↑</button>
 
+  <!-- External JavaScript file -->
   <script src="script.js"></script>
+
 </body>
 </html>
+
